@@ -1,17 +1,41 @@
 ### Successful login
-POST http://localhost:5000/login
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
 Content-Type: application/x-www-form-urlencoded
 
-username=admin&password=admin123
+username=admin&password=ajay
 
-### Failed login (wrong password)
-POST http://localhost:5000/login
+#### Failed login attempt 1
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
 Content-Type: application/x-www-form-urlencoded
 
-username=admin&password=wrongpass
+username=admin&password=wrong1
 
-### Failed login (non-existing user)
-POST http://localhost:5000/login
+### Failed login attempt 2
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
 Content-Type: application/x-www-form-urlencoded
 
-username=hacker&password=hack123
+username=admin&password=wrong2
+
+### Failed login attempt 3
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=wrong3
+
+### Failed login attempt 4
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=wrong4
+
+### Failed login attempt 5
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=wrong5
+
+### Failed login attempt 6
+POST https://ajay-lab2-linux-webapp.azurewebsites.net/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin&password=wrong6
