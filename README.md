@@ -154,7 +154,7 @@ Action Group: Email notification
 Severity: 3
 
 # YouTube Demo
-[Watch the 5-minute demo on YouTube](https://www.youtube.com/watch?v=gMyVqwlNL68)
+[Watch the 5-minute demo on YouTube](https://www.youtube.com/watch?v=-WAlFu9F1rg)
 
 ---
 
