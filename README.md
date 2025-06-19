@@ -85,7 +85,7 @@ git push azure master
   
 - Send to a Log Analytics Workspace
 
-## Testing the App
+## 5. Testing the App
 test-app.http Sample (for VS Code REST Client):
 ```sh
 ### Successful login
@@ -131,7 +131,7 @@ Content-Type: application/x-www-form-urlencoded
 username=admin&password=wrong6
 
 ```
-# KQL Query to Detect Failed Logins:
+## 6. KQL Query to Detect Failed Logins:
 ```sh
 AppServiceConsoleLogs
 | where TimeGenerated > ago(30m)
@@ -145,7 +145,7 @@ Level == "Warning" filters failed logins
 Message has "Login failed" targets failed auth logs
 summarize counts number of failed attempts in 5-minute buckets
 
-## Alert Rule
+## 7. Alert Rule
 Scope: Log Analytics Workspace
 Condition: KQL query above
 Threshold: More than 5 failed attempts
@@ -154,7 +154,7 @@ Action Group: Email notification
 Severity: 3
 
 # YouTube Demo
-[Watch the 5-minute demo on YouTube](https://www.youtube.com/watch?v=u6ZSNnYqSdc)
+[Watch the 5-minute demo on YouTube](https://www.youtube.com/watch?v=gMyVqwlNL68)
 
 ---
 
